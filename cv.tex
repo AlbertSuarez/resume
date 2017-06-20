@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+%----------------------------------------------------------------------------------------
+
+\userinformation{ % Set the content that goes into the sidebar of each page
+\begin{flushright}
+% Comment out this figure block if you don't want a photo
+\includegraphics[width=1.0\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
+\small % Smaller font size
+Albert Suarez \\ % Your name
+\url{alsumo95@gmail.com} \\ % Your email address
+\url{www.github.com/AlbertSuarez} \\ % Your URL
+(+34) 644 577 607 \\ % Your phone number
+\Sep % Some whitespace
+\textbf{Address} \\
+Ramon Llull Street, 10 \\ % Address 1
+Cardedeu, Catalonia 08440 \\ % Address 2
+Spain \\ % Address 3
+\vfill % Whitespace under this block to push it up under the photo
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Albert Suarez} % Large heading - your name
+
+\cvsubheading{Software Engineer} % Subheading - your occupation/specialization
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{About Me}{I'm a Software Engineer graduated in Universitat Politecnica de Catalunya, BarcelonaTech. I consider myself a hardworker and focused person. I like talking with new people that can provide me with new knowledge and board in my own ideas. I also love sports, music and travelling.}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+\CVItem{2013 - 2017, Universitat Politecnica de Catalunya - BarcelonaTech}{Bachelor degree in Software Engineering}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\CVSection{Experience}
+
+%------------------------------------------------
+
+\CVItem{June 2016 - present, \textit{Co Director \& Organiser}, HackUPC}{
+This group of people called Hack UPC organizes the first student Hackathon in Spain. In order to organize this event, I am working as a co-director in the organization. I am responsible for managing and coordinating a team of 25 organizers, event design, logistics, volunteers, sponsorship and marketing.}
+
+%------------------------------------------------
+
+\CVItem{September 2016 - present, \textit{Software Developer Intern}, UPCnet}{While working for UPCNet, I am in a big work team. In order to carry out my duties, I have to use programming languages like Java, frameworks like Spring or Hibernate, working with WebServices (SOAP, WSDL...) and IDEAs like Spring Tool Suite or IntelliJ and designing websites with HTML, CSS, JavaScript, Bootstrap, Sass, Less, JQuery and Handlebars. In conclusion, I am currently training to achieve the objective of become to Full Stack Java Developer.}
+
+%------------------------------------------------
+
+\CVItem{February 2016 - June 2017, \textit{Teacher}, Ases Academy}{Professor of university students, near BarcelonaTech. Currently, I am teaching two subjects: Data Structures and Algorithms and Operative Systems. I teach to student groups with 20-30 people. I really like teach and share my knowledge with university mates.}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\CVSection{Languages}
+
+%------------------------------------------------
+
+{\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth}}
+\bluebullet Spanish - Native 				&  \bluebullet Catalan - Native\\
+\bluebullet English - Academic IELTS 6 (B2)	&  \bluebullet French - Elementary proficiency\\
+\end{tabular}}
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Projects}
+
+%------------------------------------------------
+
+\CVItem{Wisebite}{An intelligent platform to manage your restaurant. It allows to create your commands, make a detailed study of your business, join your establishment in a customers network and, briefly, make your restaurant intelligent.}
+
+%------------------------------------------------
+
+\CVItem{Cityfind}{Web application developed in a hackathon situated in Copenhagen called CopenHacks, which is organized by Microsoft. CityFind is a funny way to discover the city. Just enter into the platform, register a room and share the room number with your friends. Once you are ready, the creator of the room will start the game. Each of the participants will get an SMS to their mobile phone with a timer and a thing. They will have this time to take a photo with this thing. The photo will be validated using MS cognitive services. If the photo is validated, the participant will earn point. When ending the game, the participant with more points wins.}
+
+%------------------------------------------------
+
+\CVItem{Blunch}{From the tendency of collaborative economy Blunch arises, a platform which allows its community to sell dishes or participate in a “Collaborative menu” by exchanging dishes provided by each participant. Blunch provides a useful, intuitive and secure way to meet new people, reduce the waste of food and earn some money on the way.}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Featured Skills \& Endorsements}
+
+{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+\bluebullet Java 		&  \bluebullet Android		& \bluebullet C++\\
+\bluebullet Python 		&  \bluebullet Linux		& \bluebullet SQL\\
+\bluebullet Git 		&  \bluebullet Agile		& \bluebullet Web development\\
+\bluebullet Maven 		&  \bluebullet Teaching		& \bluebullet Leadership\\
+\end{tabular}}
+
+\end{document}
