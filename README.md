@@ -1,5 +1,5 @@
-# My Curriculum Vitae
+# Resume
 
-My Curriculum Vitae written in LaTeX
+My resume written in LaTeX
 
-You can download it [here](https://drive.google.com/open?id=0B1yloAbUCK71MUJFenpZQTJpbXc).
+You can download it [here](https://github.com/AlbertSuarez/resume/raw/master/resume.pdf).
