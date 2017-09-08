@@ -1,154 +1,158 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Wenneker Resume/CV
-% LaTeX Template
-% Version 1.1 (19/6/2016)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
-% Vel (vel@LaTeXTemplates.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
 
-\documentclass[a4paper,10pt]{memoir} % Font and paper size
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
 
-\input{structure.tex} % Include the file specifying document layout and packages
 
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION 
-%----------------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-\userinformation{ % Set the content that goes into the sidebar of each page
-\begin{flushright}
-% Comment out this figure block if you don't want a photo
-\includegraphics[width=1.0\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
-\small % Smaller font size
-Albert Suarez \\ % Your name
-\url{alsumo95@gmail.com} \\ % Your email address
-\url{www.github.com/AlbertSuarez} \\ % Your URL
-(+34) 644 577 607 \\ % Your phone number
-\Sep % Some whitespace
-\vfill % Whitespace under this block to push it up under the photo
-\end{flushright}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
 }
 
-%----------------------------------------------------------------------------------------
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-\userinformation % Print your information in the left column
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Albert Suarez} & Email : alsumo95@gmail.com\\
+  http://www.asuarez.ga & Mobile : (+34) 644 577 607 \\
+  Github : @AlbertSuarez & Linkedin : /in/albertsuarezmolgo \\
+\end{tabular*}
 
-\framebreak % End of the first column
+%-----------ABOUT ME------------------
+\section{About me}
+I'm a Software Engineer graduated at Universitat Politecnica de Catalunya, BarcelonaTech. I am hard worker, friendly, positive and active. Moreover, polite and I have excellent personal skills. Capacity for teamwork and lifelong learning. Always ready to help other members of the team.
 
-%----------------------------------------------------------------------------------------
-%	HEADING
-%----------------------------------------------------------------------------------------
+%-----------EDUCATION-----------------
+\section{Education \& Training}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universitat Politecnica de Catalunya}{Barcelona, Spain}
+      {Bachelor degree in Software Engineering;  GPA: 2.93}{Sep. 2013 -- Jun. 2017}
+  \resumeSubHeadingListEnd
 
-\cvheading{Albert Suarez} % Large heading - your name
+%-----------EXPERIENCE-----------------
+\section{Working Experience}
+  \resumeSubHeadingListStart
 
-\cvsubheading{Software Engineer} % Subheading - your occupation/specialization
+    \resumeSubheading
+      {HackUPC}{Barcelona, Spain}
+      {Co Director \& Organiser}{Jun 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {I am currently working as a HackUPC co director, first and biggest Hackathon in Spain. My role consists in organizing, managing and coordinating a team of 30 organizers, event design, logistics, volunteers, sponsorship and marketing.}
+      \resumeItemListEnd
 
-%----------------------------------------------------------------------------------------
-%	ABOUT ME
-%----------------------------------------------------------------------------------------
+    \resumeSubheading
+      {UPCnet}{Barcelona, Spain}
+      {Software Developer Intern}{Sep 2016 - Jul 2017}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {I was part of a big information technology consulting firm. In order to carry out my duties, I had to use programming languages like Java, frameworks such as Spring or Hibernate, working with WebServices (SOAP, WSDL...), IDEAs like Spring Tool Suite or IntelliJ, and designing websites with HTML, CSS, JavaScript, Bootstrap, Sass, Less, JQuery and Handlebars.}
+      \resumeItemListEnd
 
-\aboutme{About Me}{I'm a Software Engineer graduated in Universitat Politecnica de Catalunya, BarcelonaTech. I consider myself a hardworker and focused person. I like talking with new people that can provide me with new knowledge and board in my own ideas. I also love sports, music and travelling.}
+    \resumeSubheading
+      {ASES Academy}{Barcelona, Spain}
+      {Teacher}{Feb 2016 - Jun 2017}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Teacher of two subjects for university students: Data Structures and Algorithms and Operative Systems. I taught groups of students between 20 to 30 people.}
+      \resumeItemListEnd
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+  \resumeSubHeadingListEnd
 
-\CVSection{Education}
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Wisebite}
+      {An intelligent platform to manage your restaurant. It allows to create your commands, make a detailed study of your business, join your establishment to a customer network and, consequently, make your restaurant intelligent.}
+    \resumeSubItem{Cityfind}
+      {Web application developed at CopenHacks, a hackathon situated in Copenhagen, which is organized by Microsoft. CityFind is a fun way to discover a city. By just entering the platform, you need to register a room and share its number with your friends. Once it is done, the creator of the room has the power to start the game. Each of the participants will get an SMS on their mobile phones with a countdown timer to find out where an object is hidden. They will have a particular time to find the object and take a photo of it. The photo will be validated by using MS cognitive services. If the photo is validated, the participant will earn points. The participant with more points wins at the end of the game.}
+    \resumeSubItem{Blunch}
+      {From the tendency of collaborative economy Blunch arises. This platform allows its community to sell dishes or participate in a “Collaborative menu” by exchanging menus provided by each participant. Blunch provides an useful, intuitive and secure way to meet new people, reduce food waste and earn some money on the way.}
+  \resumeSubHeadingListEnd
 
-%------------------------------------------------
 
-\CVItem{2013 - 2017, Universitat Politecnica de Catalunya - BarcelonaTech}{Bachelor degree in Software Engineering}
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming}{: Java, C++}
+      \textbf{Experience with}{: Python, Ruby, Ruby on Rails, Javascript, Android, Flask, SQL, HTML, CSS, Git, Scrum, Hibernate, Spring, WebServices, API Design}
+    }
+    \item{
+      \textbf{Native}{: Spanish, Catalan}
+      \textbf{Advanced}{: English (General IELTS 6)}
+      \textbf{Basic}{: French}
+    }
+    \item{
+      \textbf{Hobbies}{: Photography, Soccer, Travel, Music, Guitar, Swim}
+    }
+    \item{
+      \textbf{Hackathon participation}{: CopenHacks 2017, STARTHack 2017, Hackcon EU 2017}
+    }
+  \resumeSubHeadingListEnd
 
-%------------------------------------------------
 
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\CVSection{Experience}
-
-%------------------------------------------------
-
-\CVItem{June 2016 - present, \textit{Co Director \& Organiser}, HackUPC}{
-This group of people called Hack UPC organizes the first student Hackathon in Spain. In order to organize this event, I am working as a co-director in the organization. I am responsible for managing and coordinating a team of 25 organizers, event design, logistics, volunteers, sponsorship and marketing.}
-
-%------------------------------------------------
-
-\CVItem{September 2016 - July 2017, \textit{Software Developer Intern}, UPCnet}{While working for UPCNet, I am in a big work team. In order to carry out my duties, I have to use programming languages like Java, frameworks like Spring or Hibernate, working with WebServices (SOAP, WSDL...) and IDEAs like Spring Tool Suite or IntelliJ and designing websites with HTML, CSS, JavaScript, Bootstrap, Sass, Less, JQuery and Handlebars. In conclusion, I am currently training to achieve the objective of become to Full Stack Java Developer.}
-
-%------------------------------------------------
-
-\CVItem{February 2016 - June 2017, \textit{Teacher}, Ases Academy}{Professor of university students, near BarcelonaTech. Currently, I am teaching two subjects: Data Structures and Algorithms and Operative Systems. I teach to student groups with 20-30 people. I really like teach and share my knowledge with university mates.}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	LANGUAGES
-%----------------------------------------------------------------------------------------
-
-\CVSection{Languages}
-
-%------------------------------------------------
-
-{\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth}}
-\bluebullet Spanish - Native 				&  \bluebullet Catalan - Native\\
-\bluebullet English - Academic IELTS 6 (B2)	&  \bluebullet French - Elementary proficiency\\
-\end{tabular}}
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS
-%----------------------------------------------------------------------------------------
-
-\CVSection{Projects}
-
-%------------------------------------------------
-
-\CVItem{Wisebite}{An intelligent platform to manage your restaurant. It allows to create your commands, make a detailed study of your business, join your establishment in a customers network and, briefly, make your restaurant intelligent.}
-
-%------------------------------------------------
-
-\CVItem{Cityfind}{Web application developed in a hackathon situated in Copenhagen called CopenHacks, which is organized by Microsoft. CityFind is a funny way to discover the city. Just enter into the platform, register a room and share the room number with your friends. Once you are ready, the creator of the room will start the game. Each of the participants will get an SMS to their mobile phone with a timer and a thing. They will have this time to take a photo with this thing. The photo will be validated using MS cognitive services. If the photo is validated, the participant will earn point. When ending the game, the participant with more points wins.}
-
-%------------------------------------------------
-
-\CVItem{Blunch}{From the tendency of collaborative economy Blunch arises, a platform which allows its community to sell dishes or participate in a “Collaborative menu” by exchanging dishes provided by each participant. Blunch provides a useful, intuitive and secure way to meet new people, reduce the waste of food and earn some money on the way.}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-
-\CVSection{Featured Skills \& Endorsements}
-
-{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-\bluebullet Java 		&  \bluebullet Android		& \bluebullet C++\\
-\bluebullet Python 		&  \bluebullet Linux		& \bluebullet SQL\\
-\bluebullet Git 		&  \bluebullet Agile		& \bluebullet Web development\\
-\bluebullet Maven 		&  \bluebullet Teaching		& \bluebullet Leadership\\
-\end{tabular}}
-
+%-------------------------------------------
 \end{document}
