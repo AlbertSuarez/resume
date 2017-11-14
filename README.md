@@ -1,5 +1,5 @@
 # Resume
 
-My resume written in LaTeX
+Albert Suarez's resume written in LaTeX
 
-You can download it [here](https://github.com/AlbertSuarez/resume/raw/master/resume.pdf).
+You can download it [here](http://albertsuarez.me/resume/pdf/resume.pdf).
